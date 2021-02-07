@@ -1,0 +1,304 @@
+/* TYPOGRAPHY */
+@import "./reset.css";
+
+/* TYPOGRAPHY */
+@import "./typography.css";
+
+body {
+  background: rgb(222, 240, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(222, 240, 255, 1) 0%,
+    rgba(122, 188, 249, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5ecf9;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  color: #ddd;
+  width: 100%;
+  height: 1px;
+  margin: 1.5em 0;
+  border: none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+}
+
+.video-player {
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-player p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+.header img {
+  display: block;
+  width: 100%;
+}
+
+.header-banner {
+  background-color: #ff9494;
+  color: black;
+}
+
+.header-banner p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* MAIN */
+h1 {
+  color: #d33872;
+  margin-top: 10px;
+}
+
+h2,
+h3 {
+  color: #666;
+  margin-bottom: 9px;
+}
+
+ul {
+  color: #666;
+}
+
+.container {
+  /* background: url(../images/loading.gif) no-repeat center 120px; */
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media (min-width: 700px) {
+  .columns {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+  }
+}
+
+a,
+a:link,
+a:visited {
+  color: red;
+  font-weight: 700;
+}
+
+.highlight {
+  background-color: #ff9;
+  padding: 5px;
+}
+
+.banner,
+.banner2,
+.banner3 {
+  margin-top: 1.5em;
+  background: #ff9;
+  display: block;
+  padding: 9px;
+}
+
+.banner--red {
+  background-color: #ff9494;
+}
+
+.banner2 {
+  background: #eee;
+}
+
+.banner3 {
+  background: #fff;
+}
+
+.banner3 a {
+  color: #666;
+  font-weight: 400;
+}
+
+.checklist {
+  font-size: 1.2em;
+  list-style: circle;
+  margin: 10px 20px 30px;
+  padding: 0;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.info {
+  color: #666;
+  margin: 0 auto;
+  padding: 3px 10px;
+  text-align: left;
+}
+
+.info.ul {
+  margin: 1rem 6px 10px 17px;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.maincontent {
+  background: white;
+  padding: 30px 20px;
+}
+
+@media (min-width: 700px) {
+  .maincontent {
+    padding: 30px 40px;
+  }
+}
+
+.qoute {
+  color: blue;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#mediaList {
+  list-style: none;
+  font-size: 15px;
+}
+
+.pdfList {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.pdfList li {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.pdfList li a {
+  border: 1px solid #eee;
+  color: red;
+  display: inline-flex;
+  line-height: 30px;
+  padding: 3px;
+  text-decoration: none;
+  width: 300px;
+}
+
+.pdfList li a img {
+  margin-right: 9px;
+}
+
+.pdfList li a:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+#nav {
+  align-items: center;
+  background: #f0f0f0;
+  color: #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+  font-weight: 700;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 100%;
+}
+
+#nav li {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+
+#nav li:after {
+  content: "|";
+}
+
+#nav li:last-child:after {
+  content: "";
+}
+
+#nav a {
+  color: #f63;
+  font-weight: 700;
+  padding: 13px 8px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+@media (min-width: 700px) {
+  #nav a {
+    padding: 13px;
+  }
+}
+
+#nav a:hover {
+  color: #c39;
+  text-decoration: none;
+}
